@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="69ecff82-e58d-41c6-9820-a2994ad9720f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smbms@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smbms@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="smbms@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="smbms: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="superMaket" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="FxmlFile" />
+        <option value="Mapper" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gGKW2iuDJ3mIaaeq3LyxBR9nxo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="MyBatisLogPluginindexNum" value="11" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="introduce.parameter.lambda" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2517912" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\superMaket\mavenSmbms\src\main\java\cn\smbms\dao\user" />
+      <recent name="D:\superMaket\mavenSmbms\src\main\resources" />
+      <recent name="D:\superMaket\mavenSmbms\src\main\java\cn\smbms\servlet\user" />
+      <recent name="D:\superMaket\mavenSmbms\src\main\java\cn\smbms" />
+      <recent name="D:\superMaket\mavenSmbms\src\main\java\cn\smbms\filter" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.smbms.tools" />
+      <recent name="cn.smbms.service.user" />
+      <recent name="cn.smbms.service.provider" />
+      <recent name="cn.smbms.service.bill" />
+      <recent name="cn.smbms.pojo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\superMaket\smbmsmybatis\src\main\java\cn\smbms\dao\role" />
+      <recent name="D:\superMaket\smbmsmybatis\src\main\java\cn\smbms\dao\provider" />
+      <recent name="D:\superMaket\smbmsmybatis\src\main\java\cn\smbms\cn\smbms\provider" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UserTest.test13">
+    <configuration name="BillTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smbmsmybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smbms.dao.bill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smbms.dao.bill" />
+      <option name="MAIN_CLASS_NAME" value="cn.smbms.dao.bill.BillTest" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BillTest.test06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smbmsmybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smbms.dao.bill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smbms.dao.bill" />
+      <option name="MAIN_CLASS_NAME" value="cn.smbms.dao.bill.BillTest" />
+      <option name="METHOD_NAME" value="test06" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smbmsmybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smbms.dao.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smbms.dao.user" />
+      <option name="MAIN_CLASS_NAME" value="cn.smbms.dao.user.UserTest" />
+      <option name="METHOD_NAME" value="test11" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test12" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smbmsmybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smbms.dao.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smbms.dao.user" />
+      <option name="MAIN_CLASS_NAME" value="cn.smbms.dao.user.UserTest" />
+      <option name="METHOD_NAME" value="test12" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test13" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="smbmsmybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.smbms.dao.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.smbms.dao.user" />
+      <option name="MAIN_CLASS_NAME" value="cn.smbms.dao.user.UserTest" />
+      <option name="METHOD_NAME" value="test13" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserTest.test13" />
+        <item itemvalue="JUnit.BillTest.test02" />
+        <item itemvalue="JUnit.BillTest.test06" />
+        <item itemvalue="JUnit.UserTest.test12" />
+        <item itemvalue="JUnit.UserTest.test11" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69ecff82-e58d-41c6-9820-a2994ad9720f" name="Default Changelist" comment="" />
+      <created>1597735516095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597735516095</updated>
+      <workItem from="1597735520622" duration="7883000" />
+      <workItem from="1597748371177" duration="3219000" />
+      <workItem from="1597798724453" duration="950000" />
+      <workItem from="1597799748476" duration="17416000" />
+      <workItem from="1597827380910" duration="8463000" />
+      <workItem from="1597882617949" duration="22251000" />
+      <workItem from="1597968568811" duration="11129000" />
+      <workItem from="1597988919040" duration="532000" />
+      <workItem from="1597989472679" duration="1048000" />
+      <workItem from="1597990540502" duration="281000" />
+      <workItem from="1597990858486" duration="1210000" />
+      <workItem from="1598234972478" duration="989000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="614" y="266" key="#Inspections" timestamp="1597988061132">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="266" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1597988061132" />
+    <state x="680" y="314" key="#Project_Structure" timestamp="1597737284328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="680" y="314" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1597737284328" />
+    <state x="464" y="361" key="#SQL_Resolution_Scopes" timestamp="1597975495646">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="464" y="361" key="#SQL_Resolution_Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1597975495646" />
+    <state x="512" y="554" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1597802500419">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="512" y="554" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597802500419" />
+    <state x="446" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597827840373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="446" y="113" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597827840373" />
+    <state x="769" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1597969156990">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597969156990" />
+    <state x="834" y="464" width="431" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597988563756">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="834" y="464" width="431" height="275" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1597988563756" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597990214133">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597990214133" />
+    <state x="655" y="332" key="FileChooserDialogImpl" timestamp="1597887141415">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="332" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597887141415" />
+    <state width="1876" height="334" key="GridCell.Tab.0.bottom" timestamp="1597990821771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597990821771" />
+    <state width="1876" height="334" key="GridCell.Tab.0.center" timestamp="1597990821771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597990821771" />
+    <state width="1876" height="334" key="GridCell.Tab.0.left" timestamp="1597990821771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597990821771" />
+    <state width="1876" height="334" key="GridCell.Tab.0.right" timestamp="1597990821771">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597990821771" />
+    <state width="1851" height="339" key="GridCell.Tab.1.bottom" timestamp="1597909178162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597909178162" />
+    <state width="1851" height="339" key="GridCell.Tab.1.center" timestamp="1597909178162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="339" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597909178162" />
+    <state width="1851" height="339" key="GridCell.Tab.1.left" timestamp="1597909178162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="339" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597909178162" />
+    <state width="1851" height="339" key="GridCell.Tab.1.right" timestamp="1597909178162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1851" height="339" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597909178162" />
+    <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1597819714508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1597819714508" />
+    <state x="630" y="335" key="IDE.errors.dialog" timestamp="1597988786713">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="630" y="335" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597988786713" />
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog" timestamp="1597750086973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="177" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597750086973" />
+    <state x="272" y="89" width="1115" height="808" key="SettingsEditor" timestamp="1597990516733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="272" y="89" width="1115" height="808" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1597990516733" />
+    <state x="1352" y="334" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1597975485629">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1352" y="334" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597975485629" />
+    <state x="1126" y="301" key="com.intellij.ide.util.TipDialog" timestamp="1597827382076">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1126" y="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597827382076" />
+    <state x="836" y="244" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1597748416853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="836" y="244" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597748416853" />
+    <state x="307" y="184" key="new project wizard" timestamp="1598235967678">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="307" y="184" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1598235967678" />
+    <state x="1023" y="71" key="refactoring.ChangeSignatureDialog" timestamp="1597809593687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1023" y="71" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597809593687" />
+    <state x="618" y="235" width="672" height="677" key="run.anything.popup" timestamp="1597981815561">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597981815561" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/smbmsmybatis/src/test/java/cn/smbms/dao/provider/ProviderTest.java</url>
+          <line>50</line>
+          <properties class="cn.smbms.dao.provider.ProviderTest" method="test011">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

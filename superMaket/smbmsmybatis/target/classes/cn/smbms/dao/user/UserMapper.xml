@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.smbms.dao.user.UserMapper">
+	<cache/>
+	<resultMap id="userResultMap" type="cn.smbms.entity.User">
+		<result property="id" column="id"/>
+		<result property="userCode" column="userCode"/>
+		<result property="userName" column="userName"/>
+		<result property="gender" column="gender"/>
+		<result property="phone" column="phone"/>
+		<result property="userRoleName" column="roleName"/>
+	</resultMap>
+	<insert id="add">
+
+	</insert>
+	<update id="update">
+		update smbms_user set userName=#{userName} where id=#{id}
+	</update>
+	<update id="updatePassword">
+		update smbms_user set userPassword=#{userPassword} where id= #{id}
+	</update>
+
+	<!-- 查询用户表记录数 -->
+	<select id="count" resultType="int">
+		select count(1) as count from smbms_user
+	</select>
+	<!--查询用户列表-->
+	<select id="getUserList" resultMap="userResultMap">
+		select u.*,r.roleName from smbms_user u ,smbms_role r
+		<where>
+			<if test="userName != null">
+				userName like concat('%', #{userName}, '%')
+			</if>
+			<if test="userRole != null">
+				and userRole = #{userRole}
+			</if>
+			and u.userRole=r.id
+		</where>
+	</select>
+	<select id="getUserByName" resultType="cn.smbms.entity.User">
+		select * from smbms_user where userName like concat('%', #{userName}, '%')
+	</select>
+	<select id="getUserListCondition" resultType="cn.smbms.entity.User">
+		select * from smbms_user where userName like concat('%', #{userName}, '%') and userRole = #{userRole}
+	</select>
+	<select id="getUserListConditionMap" resultType="cn.smbms.entity.User">
+		select * from smbms_user where userName like concat('%', #{userName}, '%') and userRole = #{userRole}
+	</select>
+    <select id="getUserList_foreach_array" resultType="cn.smbms.entity.User">
+		select * from smbms_user where userRole in
+		<foreach collection="array" item="roleId" open="(" close=")" separator=",">
+			#{roleId}
+		</foreach>
+	</select>
+	<select id="getUserList_foreach_list" resultType="cn.smbms.entity.User">
+		select * from smbms_user where userRole in
+		<foreach collection="list" item="roleId" open="(" close=")" separator=",">
+			#{roleId}
+		</foreach>
+	</select>
+	<select id="getUserLiset_choose" resultType="cn.smbms.entity.User">
+		SELECT * from smbms_user where 1=1
+    <choose>
+		<when test="userCode != null and userCode !=''">
+			and userCode=#{userCode}
+		</when>
+		<when test="userName != null and userName !=''">
+			and userName=#{userName}
+		</when>
+		<when test="userRole != null ">
+			and userRole=#{userRole}
+		</when>
+<otherwise>
+	and year(creationDate)= year(#{creationDate})
+</otherwise>
+	</choose>
+	</select>
+	<!--	/-->
+
+</mapper>

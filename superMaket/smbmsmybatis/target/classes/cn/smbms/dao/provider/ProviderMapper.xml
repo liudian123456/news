@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.smbms.dao.provider.ProviderMapper">
+    <delete id="deleteProviderById">
+		delete from smbms_provider where id=#{id}
+	</delete>
+
+    <!-- 查询用户表记录数 -->
+	<select id="count" resultType="int">
+		select count(1) as count from smbms_provider
+	</select>
+	<select id="getProviderList" resultType="cn.smbms.entity.Provider">
+		select *  from smbms_provider
+	</select>
+	
+</mapper>

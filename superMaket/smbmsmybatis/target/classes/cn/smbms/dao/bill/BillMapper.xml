@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.smbms.dao.bill.BillMapper">
+
+	<resultMap id="billResultMap" type="cn.smbms.entity.Bill">
+
+		<result property="id" column="id"/>
+		<result property="billCode" column="billCode"/>
+		<result property="productName" column="productName"/>
+		<result property="totalPrice" column="totalPrice"/>
+		<result property="creationDate" column="creationDate"/>
+		<result property="isPayment" column="isPayment"/>
+
+<!--		<result property="providerName" column="proName"/>-->
+		<!--<association property="provider" javaType="Provider" resultMap="providerResultMap"/>-->
+		<collection property="providerList" ofType="Provider">
+			<id property="id" column="pid"/>
+			<result property="proCode" column="proCode"/>
+			<result property="proName" column="proName"/>
+		</collection>
+	</resultMap>
+<!--	<resultMap id="providerResultMap" type="Provider">-->
+<!--		-->
+<!--	</resultMap>-->
+
+	<!-- 查询用户表记录数 -->
+<!--	<select id="count" resultType="int">-->
+<!--		select count(1) as count from smbms_user-->
+<!--	</select>-->
+<!--	查询用户列表-->
+	<select id="getBillProviserIdByName" resultMap="billResultMap">
+		select b.*,p.proName from smbms_bill b ,smbms_provider p
+					<where>
+						<if test="productName != null">
+							b.productName like concat('%',#{productName},'%')
+						</if>
+						<if test="providerId != null">
+							and providerId= #{providerId}
+						</if>
+						<if test="isPayment !=null">
+							and isPayment= #{isPayment}
+						</if>
+						<if test="creationDate !=null">
+							and creationDate= #{creationDate}
+						</if>
+						and b.providerId = p.id
+					</where>
+                 order by  b.creationDate desc  limit #{from},#{pageSize}
+
+
+		<!--<trim prefix="where">
+			<if test="productName != null">
+				b.productName like concat('%',#{productName},'%')
+			</if>
+			<if test="providerId != null">
+				and providerId= #{providerId}
+			</if>
+			<if test="isPayment !=null">
+				and isPayment= #{isPayment}
+			</if>
+			and b.providerId = p.id
+		</trim> 用着不是很好  当if条件里都是 false是会出问题-->
+	</select>
+
+	<select id="getProductNameByName" resultType="cn.smbms.entity.Bill">
+		select * from smbms_bill where productName like concat('%', #{productName}, '%')
+	</select>
+	<select id="getBillAssociation" resultMap="billResultMap">
+		select * from smbms_bill b,smbms_provider p where b.providerId = p.id and b.providerId=#{providerId}
+	</select>
+	<select id="getBillColltetionByProviderId" resultMap="billResultMap">
+		select b.*,p.id pid,p.proCode,p.proName from smbms_provider p,smbms_bill b where p.id=b.providerId and b.providerId=#{providerId}
+	</select>
+	<select id="getBillList_chooose" resultType="cn.smbms.entity.Bill">
+		select * FROM smbms_bill where 1=1
+<choose>
+	<when test="billCode != null and billCode!=''">
+		and billCode like concat('%',#{billCode},'%')
+	</when>
+	<when test="productName != null and productName!=''">
+		and productName  like concat(#{productName})
+	</when>
+	<when test="id != null ">
+		and id=#{id}
+	</when>
+<otherwise>
+	and year(creationDate)=year(#{creationDate})
+</otherwise>
+</choose>
+	</select>
+	<!--	<select id="getUserListCondition" resultType="cn.smbms.entity.User">-->
+<!--		select * from smbms_user where userName like concat('%', #{userName}, '%') and userRole = #{userRole};-->
+<!--	</select>-->
+<!--	<select id="getUserListConditionMap" resultType="cn.smbms.entity.User">-->
+<!--		select * from smbms_user where userName like concat('%', #{userName}, '%') and userRole = #{userRole};-->
+<!--	</select>-->
+
+</mapper>

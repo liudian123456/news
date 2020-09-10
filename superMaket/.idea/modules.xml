@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mavenSmbms/mavenSmbms.iml" filepath="$PROJECT_DIR$/mavenSmbms/mavenSmbms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavenSpring/mavenSpring.iml" filepath="$PROJECT_DIR$/mavenSpring/mavenSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/superMaket.iml" filepath="$PROJECT_DIR$/superMaket.iml" />
+    </modules>
+  </component>
+</project>

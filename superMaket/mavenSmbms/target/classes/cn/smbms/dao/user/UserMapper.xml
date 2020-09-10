@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace:放的是全限定接口名，也就是../*Mapper
+-->
+<mapper namespace="cn.smbms.dao.user.UserMapper">
+	<!--<insert id="add">
+		insert into
+			smbms_user (userCode,userName,userPassword,userRole,
+						gender,birthday,phone,address,creationDate,createdBy)
+		values(#{userCode},#{userName},#{userPassword},#{userRole},
+			   #{gender},#{birthday},#{phone},#{address},#{creationDate},#{createdBy})
+	</insert>
+	<update id="updatePwd">
+		update smbms_user set userPassword= #{pwd} where id = #{id}
+	</update>
+	<update id="modify">
+		update smbms_user
+		set userName= #{userName},gender=#{gender},birthday=#{birthday},phone=#{phone},
+			address=#{address},userRole=#{userRole},modifyBy=#{modifyBy},modifyDate=#{modifyDate}
+		where id = #{id}
+	</update>
+	<delete id="deleteUserById">
+		delete from smbms_user where id = #{delId}
+	</delete>-->
+	<select id="getLoginUser" resultType="cn.smbms.pojo.User">
+	select * from smbms_user where userCode= #{userCode}
+	</select>
+</mapper>

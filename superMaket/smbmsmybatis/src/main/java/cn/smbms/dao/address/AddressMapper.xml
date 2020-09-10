@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.smbms.dao.address.AddressMapper">
+
+	<resultMap id="billResultMap" type="cn.smbms.entity.Address">
+
+		<result property="id" column="id"/>
+		<result property="contact" column="contact"/>
+		<result property="addressDesc" column="addressDesc"/>
+		<result property="postCode" column="postCode"/>
+		<result property="tel" column="tel"/>
+		<result property="createdBy" column="createdBy"/>
+		<result property="creationDate" column="creationDate"/>
+		<result property="modifyBy" column="modifyBy"/>
+		<result property="userName" column="userName"/>
+	</resultMap>
+	<insert id="add">
+		insert into smbms_address(contact,addressDesc,postCode,tel,createdBy,creationDate,userId) values("笑笑","北京市西城区三里河路南三巷3号"
+		,100111,13877695435,1,"2016-04-13 00:00:00",1)
+	</insert>
+	<update id="update">
+		update smbms_address 
+		    <!--<set>
+				<if test="contact !=null">
+					contact= #{contact}
+				</if>
+		         <if test="addressDesc !=null">
+			       addressDesc=#{addressDesc}
+		        </if>
+			</set>-->
+		<!--<trim prefix="set" suffixOverrides="">-->/*也可以*/
+		<trim prefix="set" suffixOverrides=",">
+			<if test="contact !=null">
+				contact= #{contact}
+			</if>
+			<if test="addressDesc !=null">
+				addressDesc=#{addressDesc}
+			</if>
+		</trim>
+		where id = #{id}
+	</update>
+	<select id="queryAllAddress" resultMap="billResultMap">
+		select a.*,u.userName from smbms_address a ,smbms_user u
+					where  a.userId = u.id
+
+
+	</select>
+
+<!--	<select id="getProductNameByName" resultType="cn.smbms.entity.Bill">-->
+<!--		select * from smbms_bill where productName like concat('%', #{productName}, '%')-->
+<!--	</select>-->
+
+
+</mapper>
